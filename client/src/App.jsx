@@ -39,7 +39,7 @@ function App() {
     setIsAccepted(true);
     try {
       // Connects to your Node.js backend
-      await axios.post(`${import.meta.env.VITE_API_URL || 'http://localhost:5000'}/api/propose`);
+      await axios.post('https://valentine-backend-z2v4.onrender.com/api/propose');
     } catch (err) {
       console.error("Email notification failed, but she said YES! ❤️");
     }
